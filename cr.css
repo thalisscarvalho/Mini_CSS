@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+body {
+    background-color: #283845;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*div que contem todos*/
+div#tudo {
+    background-color: #1f252c;
+    max-width: 1000px;
+    width: 100%;
+    height: 1000px;
+    margin-left: 290px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    padding-bottom: 500px;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+header#cabeca {
+    position: absolute;
+    background-color: rgb(108, 105, 138);
+    display: block;
+    margin-left: 290px;
+    margin-right: 500px;
+    margin-top: -100px;
+    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-shadow: 2px 2px 4px black;
+
+}
+
+/*div, cor branca com texto*/
+div#menu {
+    position: absolute;
+    background-color: #ffffff;
+    display: block;
+    padding: 50px;
+    margin-top: -150px;
+    margin-left: -300px;
+    width: 500px;
+    height: 50px;
+    box-shadow: 2px 2px 4px black;
+}
+div#menu h1 {
+    text-align: center;
+    border: 2px solid black;
+    margin-top: -30px;
+    padding: 10px;
+    font-size: 50pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.tet {
+    display: block;
+    width: 400px;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    font-family: serif;
+
+}
+
+/*cor laranja em baixo da branca*/
+div#sub {
+    display: block;
+    position: absolute;
+    background-color: #d86a11;
+    max-width: 950px;
+    width: 100%;
+    padding: 110px;
+    margin-left: -80px;
+    margin-top: 390px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+}
+/*cor branca em cima*/
+div#sub section {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 1055px;
+    margin-left: -130px;
+    margin-top: -130px;
+    padding: 50px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+
+}
+/*imagem da lampada*/
+img {
+    position: absolute;
+    display: block;
+    width: 100px;
+    margin-left: -30px;
+}
+/*texto ao lado da lampada*/
+h1#lap {
+    display: block;
+    margin-left: 100px;
+}
+div#sub p {
+    margin-left: 100px;
+}
+
+/*cor azul em baixo da branca*/
+div#ob {
+    background-color: aqua;
+    width: 1010px;
+    margin-left: 180px;
+    margin-top: -800px;
+    padding: 80px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 5px;
+}
+
+
+/*cor branca em cima da azul*/
+div#ob section {
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    max-width: 1055px;
+    width: 100%;
+    padding: 50px;
+    margin-top: -150px;
+    margin-left: -3
+    0px;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 5px;
+}
+
+
+div#ob h1 {
+    text-align: center;
+    color:#7a3d7c
+}
+div#ob p {
+    text-align: center;
+    color:#7a3d7c
+}
+
+/*icone do instagran*/
+div.container img{
+    width: 30px;
+    height: 30px;
+   margin-left: -15px;
+   margin-top: -15px;
+}
+
+/*interação do icone do instagran*/
+div.container{
+    width: 50px;
+    height: 50px;
+    margin-top: 530px;
+    margin-left: 200px;
+    padding: 50px;
+}
+div.icons{
+    width: 50px;
+    height: 50px;
+    margin:  10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform .3s;
+}
+
+div.icons a{
+    color: rgb(91, 55, 133);
+}
+
+div.icons:hover{
+    transform: scale(1.5); 
+}
+
+div.icons::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,#b52b65,#ed6663);
+    z-index: -1;
+    border-radius: 90%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+div.icons:hover::before{
+    transform: translate(0);
+    animation: animate .4s linear; 
+}
+
+@keyframes animate{
+    0%,100%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+}
